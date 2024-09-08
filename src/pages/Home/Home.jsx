@@ -37,21 +37,34 @@ function Home() {
 
     return (
         <>
-        <Navbar />
-        <div className="flex flex-wrap justify-between mt-10 m-10">
+        {/* <Navbar />
+        <div className="flex flex-wrap justify-between mt-10 m-10"> */}
         
         {/*  to show let say 6 cards in interface, tei <card/> lai copy paste garnu vanda we use Higher order function (HOF) map. */}
         {/* Map is a HOF and it takes function inside it. */}
 
-        {
+        {/* {
             products.map((product) => {
                 return (
-                    <Card productprops ={product} />
+                    <Card key={product.id} productprops={product} />               
                 )
             })
         }
-        </div>
+        </div> */}
 
+        <Navbar />
+    <div className="flex flex-wrap justify-between mt-10 m-10">
+
+        {/*  to show let say 6 cards in interface, tei <card/> lai copy paste garnu vanda we use Higher order function (HOF) map. */}
+        {/* Map is a HOF and it takes function inside it. */}
+        {products.length === 0 ? (
+            <p>Loading products...😎😎</p>
+        ) : (
+            products.map((product) => (
+                <Card productprops = {product} />
+            ))
+        )}
+    </div>
         </>
     )
 }

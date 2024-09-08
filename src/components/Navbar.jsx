@@ -63,24 +63,14 @@ return (
             <Link to="/create" className="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white"
                 aria-current="page"
             >
-                + ADD
+                + ADD PRODUCT
             </Link>
-            <Link to ="/create" className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"> Create </Link>
-            <Link to ="/product"
-                className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
-            >
-                Read
-            </Link>
-            <Link to ="/edit"
-                className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
-            >
-                Update
-            </Link>
+           
             <a
                 href="#"
                 className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
             >
-                Delete
+                Product Management System
             </a>
             </div>
         </div>
