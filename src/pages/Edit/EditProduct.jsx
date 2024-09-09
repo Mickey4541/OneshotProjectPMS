@@ -8,7 +8,7 @@ import { useParams } from "react-router-dom"; // Add this import
 
 function EditProduct() {
     const {id} = useParams()
-   
+
     return (
         <>
         <Navbar/>

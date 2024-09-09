@@ -41,7 +41,7 @@ function Form({type,id}){
     //console.log(data)
     const createProduct = async(e) => {
         e.preventDefault()//to stop the page from being refresh while submitting data. we are doing post but bu default form is submitted in get. So to prevent it.
-        if(type === "create"){
+        if(type === "Create"){
             const response = await axios.post("https://66dd8f42f7bcc0bbdcde691a.mockapi.io/products", data)
             // console.log(response);
             if(response.status === 201){
